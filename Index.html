@@ -1,1 +1,206 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سياسة الخصوصية لتطبيق ركّز، تطبيق ألعاب تنمي التركيز والانتباه.">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>سياسة الخصوصية | ركّز</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: rgba(255, 255, 255, 0.94);
+      --text: #172033;
+      --muted: #667085;
+      --primary: #5b4ce6;
+      --primary-dark: #4338ca;
+      --accent: #14b8a6;
+      --border: #e4e7ec;
+      --shadow: 0 24px 60px rgba(32, 43, 77, 0.1);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 5%, rgba(91, 76, 230, 0.14), transparent 28rem),
+        radial-gradient(circle at 90% 28%, rgba(20, 184, 166, 0.12), transparent 24rem),
+        var(--bg);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.9;
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 5.5rem 1.25rem 7rem;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(135deg, #4338ca 0%, #6554e8 55%, #14b8a6 140%);
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .hero::before { width: 19rem; height: 19rem; top: -9rem; right: -5rem; }
+    .hero::after { width: 12rem; height: 12rem; bottom: -6rem; left: -2rem; }
+    .hero-content { position: relative; z-index: 1; max-width: 760px; margin: auto; }
+    .logo {
+      display: grid;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 1rem;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.16);
+      box-shadow: 0 12px 30px rgba(24, 18, 90, 0.18);
+      font-size: 2rem;
+      backdrop-filter: blur(10px);
+    }
+    h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3.8rem); line-height: 1.3; }
+    .hero p { max-width: 650px; margin: 1rem auto 0; color: rgba(255, 255, 255, 0.88); font-size: 1.08rem; }
+    .updated {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 0.88rem;
+    }
+    main { max-width: 900px; margin: -3.5rem auto 0; padding: 0 1rem 4rem; }
+    .policy {
+      position: relative;
+      z-index: 2;
+      padding: clamp(1.25rem, 4vw, 3rem);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 24px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .notice {
+      margin-bottom: 2.25rem;
+      padding: 1.1rem 1.25rem;
+      border-right: 4px solid var(--accent);
+      border-radius: 14px;
+      background: #ecfdf9;
+    }
+    .notice p { margin: 0; color: #285e58; }
+    section { padding: 1.35rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: 0; }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 0 0 0.65rem;
+      color: var(--primary-dark);
+      font-size: 1.35rem;
+    }
+    h2::before {
+      content: attr(data-number);
+      display: inline-grid;
+      flex: 0 0 2rem;
+      height: 2rem;
+      place-items: center;
+      border-radius: 10px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      font-size: 0.82rem;
+    }
+    p, li { color: var(--muted); }
+    section p { margin: 0.45rem 0; }
+    ul { margin: 0.7rem 0; padding-right: 1.35rem; }
+    li { margin: 0.3rem 0; }
+    strong { color: var(--text); }
+    .contact {
+      margin-top: 1.5rem;
+      padding: 1.4rem;
+      border-radius: 16px;
+      color: #fff;
+      background: #172033;
+      text-align: center;
+    }
+    .contact h2 { justify-content: center; color: #fff; }
+    .contact h2::before { display: none; }
+    .contact p { margin: 0.4rem auto; color: #cbd5e1; }
+    footer { padding: 1.8rem 1rem 2.5rem; color: var(--muted); text-align: center; font-size: 0.9rem; }
+    @media (max-width: 600px) {
+      .hero { padding: 3.75rem 1rem 6rem; }
+      .hero p { font-size: 1rem; }
+      .policy { border-radius: 20px; }
+      h2 { align-items: flex-start; font-size: 1.18rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="logo" aria-hidden="true">🎯</div>
+      <h1>سياسة الخصوصية</h1>
+      <p>نحترم خصوصيتك أثناء استخدامك لتطبيق «ركّز»، ونوضح هنا بشفافية كيفية التعامل مع بياناتك داخل التطبيق.</p>
+      <span class="updated">آخر تحديث: 26 نوفمبر 2026</span>
+    </div>
+  </header>
+  <main>
+    <article class="policy">
+      <div class="notice">
+        <p><strong>الملخص:</strong> صُمّم «ركّز» ليتيح تجربة ألعاب للتركيز دون اشتراط إنشاء حساب. لا يجمع التطبيق من المستخدم مباشرةً اسمًا أو بريدًا إلكترونيًا أو بيانات شخصية أخرى.</p>
+      </div>
+      <section>
+        <h2 data-number="01">مقدمة ونطاق السياسة</h2>
+        <p>تنطبق هذه السياسة على تطبيق «ركّز» وجميع أنشطته وخدماته المرتبطة بالألعاب المصممة لدعم التركيز والانتباه. باستخدام التطبيق، فإنك تقر بأنك اطلعت على هذه السياسة وفهمت ممارسات الخصوصية الموضحة فيها.</p>
+      </section>
+      <section>
+        <h2 data-number="02">البيانات التي نجمعها</h2>
+        <p>لا يطلب التطبيق تسجيل حساب، ولا يجمع من المستخدم مباشرةً بيانات تعريفية مثل الاسم أو رقم الهاتف أو العنوان أو البريد الإلكتروني. كما لا يجمع الصور أو ملفات الجهاز أو بيانات الموقع الجغرافي.</p>
+        <p>قد تُحفظ داخل جهازك فقط البيانات اللازمة لتشغيل اللعبة، مثل مستوى التقدم، والنتائج، وإعدادات الصوت أو العرض. تبقى هذه البيانات على جهازك ما لم تقم بتمكين مزايا نسخ احتياطي يوفرها نظام التشغيل أو متجر التطبيقات.</p>
+      </section>
+      <section>
+        <h2 data-number="03">كيفية استخدام البيانات</h2>
+        <ul>
+          <li>توفير الألعاب وحفظ تقدمك وإعداداتك.</li>
+          <li>تحسين أداء التطبيق واستقرار التجربة.</li>
+          <li>تلبية المتطلبات التقنية والأمنية اللازمة لتشغيل التطبيق.</li>
+        </ul>
+        <p>لا نبيع بيانات المستخدمين ولا نؤجرها ولا نستخدمها لعرض إعلانات موجهة.</p>
+      </section>
+      <section>
+        <h2 data-number="04">الأذونات ووظائف الجهاز</h2>
+        <p>لا يحتاج التطبيق إلى أذونات حساسة مثل الموقع، والكاميرا، والميكروفون، وجهات الاتصال، أو الوصول إلى الملفات الشخصية. وإذا طلب إصدار لاحق أي إذن، فسيُستخدم فقط للغرض الموضح داخل التطبيق، ويمكنك رفضه أو سحبه من إعدادات الجهاز.</p>
+      </section>
+      <section>
+        <h2 data-number="05">الأطراف الخارجية</h2>
+        <p>قد يعالج متجر Google Play ونظام التشغيل البيانات اللازمة لتنزيل التطبيق وتحديثه ونسخ بيانات الجهاز احتياطيًا، وفقًا لسياساتهم الخاصة. لا يتحكم «ركّز» في كيفية جمع Google لهذه البيانات ولا في سياساتها، ويمكنك مراجعة إعدادات الخصوصية في حساب Google ومنصة توزيع التطبيق.</p>
+        <p>لن تتم مشاركة بيانات المستخدم مع أطراف إعلانية أو تحليلية أو مزودي خدمات من خارج التطبيق ما لم تبيّن سياسة محدثة ذلك بوضوح قبل تفعيل المشاركة.</p>
+      </section>
+      <section>
+        <h2 data-number="06">حماية البيانات والاحتفاظ بها</h2>
+        <p>نستخدم الوسائل الفنية المعقولة لحماية التطبيق والحد من الوصول غير المصرح به. تُحتفظ بيانات اللعب المحلية على جهازك حتى حذف بيانات التطبيق أو إلغاء تثبيته، وقد يختلف ذلك إذا فعّلت خدمة نسخ احتياطي خارجية من إعدادات جهازك.</p>
+        <p>رغم اتخاذ تدابير مناسبة، لا توجد وسيلة نقل أو تخزين إلكتروني آمنة بالكامل، ولا يمكن ضمان الأمان المطلق.</p>
+      </section>
+      <section>
+        <h2 data-number="07">خصوصية الأطفال والعائلات</h2>
+        <p>يراعي «ركّز» أهمية حماية خصوصية الأطفال. لا نجمع عن قصد معلومات شخصية من الأطفال، ولا نوفر مراسلة داخل التطبيق أو حسابات عامة، ولا نسمح بمشاركة معلوماتهم مع أطراف لأغراض الإعلان.</p>
+        <p>إذا كنت ولي أمر أو وصيًا وتعتقد أن طفلًا قدّم بيانات شخصية، فيرجى التواصل معنا لحذفها عند الإمكان.</p>
+      </section>
+      <section>
+        <h2 data-number="08">حقوقك وخياراتك</h2>
+        <p>يمكنك التحكم في البيانات المحلية من خلال مسح بيانات التطبيق من إعدادات جهازك أو حذف التطبيق. كما يمكنك إدارة أذونات التطبيق والتحديثات والنسخ الاحتياطية من خلال إعدادات نظام التشغيل ومتجر التطبيقات.</p>
+        <p>تظل البيانات المرتبطة بخدمات Google خاضعة لأدوات وخيارات حسابك لدى Google.</p>
+      </section>
+      <section>
+        <h2 data-number="09">تحديثات السياسة</h2>
+        <p>قد نحدّث هذه السياسة عند إضافة مزايا جديدة أو تغير المتطلبات القانونية أو التقنية. سيظهر تاريخ «آخر تحديث» في أعلى الصفحة عند إجراء أي تعديل، ويُعد استمرار استخدام التطبيق بعد نشر التحديث موافقة على النسخة المحدثة بالقدر المسموح به.</p>
+      </section>
+      <div class="contact">
+        <h2>التواصل معنا</h2>
+        <p>لطرح أي سؤال عن الخصوصية أو طلب حذف بيانات مرتبطة بالتطبيق، يمكنك التواصل مع فريق «ركّز» عبر وسيلة التواصل الموضحة في صفحة التطبيق على متجر Google Play.</p>
+      </div>
+    </article>
+  </main>
+  <footer>© 2026 ركّز — جميع الحقوق محفوظة</footer>
+</body>
+</html>
